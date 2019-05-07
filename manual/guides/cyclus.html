@@ -8,13 +8,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Moltres</title>
+  <title>Cyclus</title>
     <meta name="viewport" content="width=device-width">
   <meta name="description" content="Website for the Advanced Reactors and Fuel Cycles group">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
   <link rel="stylesheet" href="/style.css">
-  <link rel="canonical" href="http://arfc.github.io/software/moltres/">
+  <link rel="canonical" href="http://arfc.github.io/manual/guides/cyclus">
   <link rel="alternate" type="application/rss+xml" title="ARFC" href="http://arfc.github.io/feed.xml">
   <link rel="shortcut icon" href="http://arfc.github.io/favicon.ico" />
     <!-- Custom Fonts -->
@@ -260,8 +260,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Moltres</h2>
-                    <h3 class="section-subheading text-muted">Open Source Modeling of Molten Salt Reactors</h3>
+                    <h2 class="section-heading">Cyclus</h2>
+                    <h3 class="section-subheading text-muted">Cyclus - Creating your Ubuntu Environment</h3>
                 </div>
             </div>
         </div>
@@ -271,63 +271,61 @@
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-8">
-    <p>Moltres is a MOOSE-application code designed for simulation of molten salt
-reactors.</p>
+    <h2 id="step-0-clean-install-ubuntu">Step 0. Clean Install Ubuntu</h2>
+<p>Make sure your Ubuntu environment is clean to ensure the script works. 
+This is most easily done by performing a fresh install of Ubuntu. Otherwise,
+check that previous installations of cyclus have been removed, and the 
+bashrc file is in the default state.</p>
 
-<h2 id="use">Use</h2>
+<h2 id="step-1-get-the-script">Step 1. Get the Script</h2>
+<p>Clone the script from <a href="https://github.com/arfc/scripts">here</a>. Make sure you have
+both the <code class="highlighter-rouge">startup.sh</code> and <code class="highlighter-rouge">toBash.txt</code> files.
+<code class="highlighter-rouge">git clone git@github.com:arfc/scripts &amp;&amp; cd scripts</code></p>
+<h2 id="step-2-run-the-script">Step 2. Run the script</h2>
+<p>Change to the directory containing the script and proceed to run it with the following:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/scripts/cyclus-setup &amp;&amp; bash startup.sh
+</code></pre></div></div>
+<p>The script will prompt you asking what to install.</p>
 
-<p>Outlines of the kernels and boundary
-conditions used to construct the Moltres governing equations can be found on the
-<a href="http://arfc.github.io/software/moltres/wiki/">Moltres wiki</a>. Breakdown of a
-full-fledged Moltres input file can be found
-<a href="http://arfc.github.io/software/moltres/wiki/input_example/">here</a>. New Moltres
-users who have never used MOOSE before are encouraged to check-out its
-<a href="http://mooseframework.org/wiki/">wiki</a>,
-<a href="http://mooseframework.org/wiki/MooseTutorials/">tutorials</a>, and
-<a href="http://mooseframework.org/wiki/MooseExamples/">examples</a> to help understand the
-underlying Moltres components.</p>
+<p>For this installation we will be primarily concerned with a conda installation, therefore we install
+the following options:</p>
 
-<h2 id="install">Install</h2>
+<p>| Prompt | Input |
+|:——-|——:|
+|Update Bashrc  |  ` 1<code class="highlighter-rouge">   |
+|Install Cyclus Dependencies (apt) | </code>2<code class="highlighter-rouge"> |
+|Install Conda 3 | </code>1<code class="highlighter-rouge"> |
+|Install Cyclus Dependencies (conda) | </code>1<code class="highlighter-rouge"> |
+|Install Pyne | </code>1<code class="highlighter-rouge"> |
+|Install Jupyter Extensions | </code>1<code class="highlighter-rouge"> (Optional) |
+|Setup Git | </code>1<code class="highlighter-rouge"> |
+|Install Sublime Text | </code>1<code class="highlighter-rouge"> (Optional) |
+|Install Other Software | </code>2` |</p>
 
-<p>Moltres relies on the MOOSE framework. To install MOOSE please follow the
-instructions at http://mooseframework.org/getting-started/. After installing
-MOOSE, you can install Moltres by running the following commands in a shell
-after changing into the directory holding your MOOSE directory (perhaps <code class="highlighter-rouge">~/projects</code>):</p>
+<p>** <code class="highlighter-rouge">1</code> and <code class="highlighter-rouge">2</code> correspond to the displayed Yes and No options respectively.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/arfc/moltres
-<span class="nb">cd </span>moltres
-git submodule init
-git submodule update
-make <span class="nt">-j8</span>
+<h2 id="step-3-clone-cyclus-and-cycamore-repositories">Step 3. Clone Cyclus and Cycamore Repositories</h2>
+<p>The repositories are found here for <a href="https://github.com/cyclus/cyclus">cyclus</a> and 
+<a href="https://github.com/cyclus/cycamore">cycamore</a>.</p>
+
+<p>Likewise, the following can be entered in the terminal:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~ &amp;&amp; git clone https://github.com/cyclus/cyclus &amp;&amp; git clone https://github.com/cyclus/cycamore
 </code></pre></div></div>
 
-<p>You may also compile a debug version of Moltres by running <code class="highlighter-rouge">METHOD=dbg make
--j8</code>. Note that you should replace <code class="highlighter-rouge">8</code> with the number of processors available
-on your machine.</p>
+<h2 id="step-4-installation">Step 4. Installation</h2>
+<p>With the dependencies installed, and the repositories downloaded we can proceed to build from source.
+This is accomplished by running the <code class="highlighter-rouge">setup.py</code> scripts in each directory.</p>
 
-<h2 id="testing">Testing</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/cyclus &amp;&amp; python setup.py
+</code></pre></div></div>
 
-<p>To ensure that Moltres is functioning properly, run <code class="highlighter-rouge">./run_tests -j8</code> from the
-root of the Moltres directory.</p>
+<p>After Cyclus is installed, we proceed to Cycamore:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/cycamore &amp;&amp; python setup.py
+</code></pre></div></div>
 
-<h2 id="development">Development</h2>
-
-<p>API documentation for those interested in understanding or developing Moltres
-can be found <a href="https://arfc.github.io/moltres/">here</a>. If you ever want to
-contribute changes to the Moltres repository, make sure you run
-<code class="highlighter-rouge">scripts/install-format-hook.sh</code> before making any commits. This will ensure
-that any commits you make adhere to the MOOSE/Moltres C++ style. Pull requests
-should be submitted to the <code class="highlighter-rouge">devel</code> branch of the <code class="highlighter-rouge">arfc/moltres</code> repository. Each
-pull request is automatically tested for style and for whether it breaks any of
-the core Moltres physics capabilities.</p>
-
-<h2 id="contact">Contact</h2>
-
-<p>Contact Alex Lindsay at al007@illinois.edu for more information or
-even better, please post to our discussion list at
-moltres-users@googlegroups.com.</p>
-
-<p><img src="phoenix_CC0.jpg" alt="" /></p>
+<p>If both have successfully installed, we must now verify they perform as intended with unit tests:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cyclus_unit_tests &amp;&amp; cycamore_unit_tests
+</code></pre></div></div>
 
                 </div>
                 <div class="col-md-2">
