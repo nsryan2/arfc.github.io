@@ -26,7 +26,6 @@ task :publish => [:generate] do
 
     pwd = Dir.pwd
 
-    system "git push upstream source"
     system "git checkout master"
     system "rm -r *"
     cp_r "#{tmp}/.", "."
@@ -38,5 +37,6 @@ task :publish => [:generate] do
 
     Dir.chdir pwd
     system "git checkout source"
+    system "git push upstream source"
   end
 end
