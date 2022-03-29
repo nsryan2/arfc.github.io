@@ -51,3 +51,5 @@ scholar:
   query: "@*"
   
   repository: papers
+
+theme: jekyll-theme-cayman
