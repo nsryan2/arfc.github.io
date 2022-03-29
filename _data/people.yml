@@ -5,7 +5,7 @@
   role: Assistant Professor
   src: http://kdhuff.web.engr.illinois.edu
   url: http://kdhuff.web.engr.illinois.edu
-  description: 'Katy is the director of the Advanced Reactors and Fuel Cycles group at Illinois and is currently on a leave of absence to serve in the Department of Energy.'
+  description: "Katy is the director of the Advanced Reactors and Fuel Cycles group at Illinois and is currently on a leave of absence to serve in the Department of Energy."
   social:
     - url: http://katyhuff.youcanbook.me
       icon: calendar
@@ -27,7 +27,7 @@
   role: Research Scientist
   src: https://munkm.github.io
   url: https://munkm.github.io
-  description: 'Madicken is acting the director of the Advanced Reactors and Fuel Cycles group at Illinois.'
+  description: "Madicken is acting the director of the Advanced Reactors and Fuel Cycles group at Illinois."
   social:
     - url: https://github.com/munkm
       icon: github-alt
@@ -43,20 +43,20 @@
   pic: /img/people/smpark.jpg
   dates: 2017-present
   role: Graduate Research Assistant
-  description: 'Sun Myung Park is a PhD student embarking on his nuclear engineering journey.'
+  description: "Sun Myung Park is a PhD student embarking on his nuclear engineering journey."
   social:
-      - url: mailto:smpark3@illinois.edu
-        icon: envelope-o
-        name: email
-      - url: https://github.com/smpark7
-        icon: github-alt
-        name: Github
+    - url: mailto:smpark3@illinois.edu
+      icon: envelope-o
+      name: email
+    - url: https://github.com/smpark7
+      icon: github-alt
+      name: Github
 
 - name: Gwendolyn Chee
   pic: /img/people/cheeg.jpg
   dates: 2017-present
   role: Graduate Research Assistant
-  description: 'Gwendolyn Chee is a Masters Student interested in fuel cycle simulations.'
+  description: "Gwendolyn Chee is a Masters Student interested in fuel cycle simulations."
   social:
     - url: mailto:gchee2@illinois.edu
       icon: envelope-o
@@ -69,7 +69,7 @@
   pic: /img/people/chaubea.jpg
   dates: 2017-present
   role: Graduate Researcher
-  description: 'Ansh is a graduate student interested in mutiphysics simulations of advanced fission reactors.'
+  description: "Ansh is a graduate student interested in mutiphysics simulations of advanced fission reactors."
   social:
     - url: mailto:achaube2@illinois.edu
       icon: envelope-o
@@ -82,7 +82,7 @@
   pic: /img/people/fairhurstr.jpg
   dates: 2018-present
   role: Graduate Research Assistant
-  description: 'Roberto is a Masters Student interested in mutiphysics simulations of advanced fission reactors.'
+  description: "Roberto is a Masters Student interested in mutiphysics simulations of advanced fission reactors."
   social:
     - url: mailto:ref3@illinois.edu
       icon: envelope-o
@@ -95,7 +95,7 @@
   pic: /img/people/richterz.png
   dates: 2018-present
   role: Graduate Research Assistant
-  description: 'Zoe is an NRC fellow with an interest in advanced reactors, fuel cycles, and nonproliferation.'
+  description: "Zoe is an NRC fellow with an interest in advanced reactors, fuel cycles, and nonproliferation."
   social:
     - url: mailto:zrichte2@illinois.edu
       icon: envelope-o
@@ -110,7 +110,7 @@
   role: Graduate Research Assistant
   src: http://www.samgdotson.com/
   url: http://www.samgdotson.com/
-  description: 'Sam is currently working on machine learning applications for isotope identification and is interested in everything.'
+  description: "Sam is currently working on machine learning applications for isotope identification and is interested in everything."
   social:
     - url: mailto:sgd2@illinois.edu
       icon: envelope-o
@@ -126,15 +126,14 @@
   pic: /img/people/yardaso.jpeg
   dates: 2020-present
   role: Graduate Research Assistant
-  description: 'Olek is a graduate student interested in passive safety and operations, microreactors, and decentralized power generation. He is still trying to figure out how to integrate these interests into a viable career.'
+  description: "Olek is a graduate student interested in passive safety and operations, microreactors, and decentralized power generation. He is still trying to figure out how to integrate these interests into a viable career."
   social:
-      - url: mailto:oyardas2@illinois.edu
-        icon: envelope-o
-        name: email
-      - url: https://github.com/yardasol
-        icon: github-alt
-        name: Github
-
+    - url: mailto:oyardas2@illinois.edu
+      icon: envelope-o
+      name: email
+    - url: https://github.com/yardasol
+      icon: github-alt
+      name: Github
 
 - name: Amanda Bachmann
   pic: /img/people/bachmanna.png
@@ -142,15 +141,15 @@
   role: Graduate Research Assistant
   description: "Amanda is a PhD student interested in the nuclear fuel cycle and the best ways to implement nonproliferation safeguards."
   social:
-      - url: mailto:amandab7@illinois.edu
-        icon: envelope-o
-        name: email
-      - url: https://github.com/abachma2
-        icon: github-alt
-        name: Github
-      - url: https://twitter.com/amanda_bachmann
-        icon: twitter
-        name: Twitter
+    - url: mailto:amandab7@illinois.edu
+      icon: envelope-o
+      name: email
+    - url: https://github.com/abachma2
+      icon: github-alt
+      name: Github
+    - url: https://twitter.com/amanda_bachmann
+      icon: twitter
+      name: Twitter
 
 - name: Luke Seifert
   pic: /img/people/seifertl.png
@@ -158,12 +157,12 @@
   role: Graduate Research Assistant
   description: "Luke is a PhD student interested in advanced reactor modeling and simulation, particularly Molten Salt Reactors."
   social:
-      - url: mailto:seifert5@illinois.edu
-        icon: envelope-o
-        name: email
-      - url: https://github.com/LukeSeifert
-        icon: github-alt
-        name: Github
+    - url: mailto:seifert5@illinois.edu
+      icon: envelope-o
+      name: email
+    - url: https://github.com/LukeSeifert
+      icon: github-alt
+      name: Github
 
 - name: Lu Kissinger
   pic: /img/people/kissingerl.jpg
@@ -171,18 +170,19 @@
   role: Graduate Research Assistant
   description: "Lu  is a Masters student using Monte Carlo codes to investigate the feasibility of Lunar Surface Fission Power. They also worked on reactor modeling projects with ARFC as an undergraduate and at Argonne post-bachelor's"
   social:
-      - url: mailto:lkissin2@illinois.edu
-        icon: envelope-o
-        name: email
-      - url: https://github.com/lkissin2
-        icon: github-alt
-        name: Github
+    - url: mailto:lkissin2@illinois.edu
+      icon: envelope-o
+      name: email
+    - url: https://github.com/lkissin2
+      icon: github-alt
+      name: Github
 
 - name: Nathan Ryan
   pic: /img/people/ryann.png
   dates: 2020-present
   role: Undergraduate Research Assistant
-  description: 'Nathan is an undergraduate student in the Physics department at UIUC interested in the simulation of new regimes in nuclear reactors.'
+  pronouns: He/They
+  description: "Nathan is an undergraduate student in the Physics department at UIUC interested in the simulation of new regimes in nuclear reactors."
   social:
     - url: mailto:nsryan2@illinois.edu
       icon: envelope-o
@@ -198,7 +198,7 @@
   pic: /img/people/panczykn.png
   dates: 2020-present
   role: Undergraduate Research Assistant
-  description: 'Nataly is an undergraduate in NPRE at UIUC. Her interests in nuclear power stem largely from her concern for the environment and her love of physics, math, and computer science.'
+  description: "Nataly is an undergraduate in NPRE at UIUC. Her interests in nuclear power stem largely from her concern for the environment and her love of physics, math, and computer science."
   social:
     - url: mailto:panczyk2@illinois.edu
       icon: envelope-o
@@ -214,7 +214,7 @@
   pic: /img/people/yeungn.jpg
   dates: 2021-present
   role: Undergraduate Research Assistant
-  description: 'Nicholas is an undergraduate student currrently majoring in philosophy at UIUC. He is interested in learning more about simulation of reactor designs.'
+  description: "Nicholas is an undergraduate student currrently majoring in philosophy at UIUC. He is interested in learning more about simulation of reactor designs."
   social:
     - url: mailto:yinokny2@illinois.edu
       icon: envelope-o
@@ -229,7 +229,7 @@
   role: Group Member
   src: /positions
   url: /positions
-  description: 'Ideal ARFC group members seek to advance nuclear energy challenges through advanced computing, physics-informed modeling, and sophisticated simulation'
+  description: "Ideal ARFC group members seek to advance nuclear energy challenges through advanced computing, physics-informed modeling, and sophisticated simulation"
   social:
     - url: mailto:katyhuff@gmail.com
       icon: envelope-o
