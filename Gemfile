@@ -10,5 +10,5 @@ gem 'rake'
 
 group :jekyll_plugins do
   gem 'jekyll-scholar', '> 5.16.0'
-  #gem 'github-pages', '~> 227'
+  gem 'github-pages', '~> 227'
 end
